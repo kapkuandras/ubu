@@ -1,4 +1,4 @@
-name="Automatized Build"
+name="AutoUbu"
 os='Ubuntu_64'
 sizeDisk=20000
 isofile='/home/sis/ubuntuserver.iso'
@@ -12,4 +12,4 @@ VBoxManage storageattach "$name" --storagectl "SATA Controller" --port 0 --devic
 VBoxManage modifyvm "$name" --boot1 dvd --boot2 disk --boot3 none --boot4 none
 VBoxManage modifyvm "$name" --memory 2048 --vram 128
 VBoxManage modifyvm "$name" --nic1 bridged --bridgeadapter1 enp2s0 --cableconnected1 on
-VBoxManage startvm "$name"
+VBoxManage startvm "$autoubu"
