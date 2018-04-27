@@ -1,7 +1,7 @@
 name="AutoUbu"
 os='Ubuntu_64'
 sizeDisk=20000
-isofile='/home/sis/ubuntu-16.04.3-server-amd64-unattended.iso'
+isofile='/home/sis/ubuntuserver.iso'
 filepath='/home/kapkuandras/VirtualBox VMs/'
 VBoxManage createhd --filename "$filepath$name/$name.vdi" --size $sizeDisk
 VBoxManage createvm --basefolder "$filepath" --name "$name" --ostype $os --register
